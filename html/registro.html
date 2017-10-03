@@ -19,53 +19,45 @@
       </div>
     </nav>
     <section>
-      <h3>Registrate para poder comprar lo ultimo de nuestro catalogo!</h3>
+      <h3>Registrate para poder comprar lo último de nuestro catalogo!</h3>
       <hr>
       <br>
       <form class="register_form" action="bienvenido.php" method="post">
-        <ul>
-          <li>
-            <label for="">Nombre <span id="ast">*</span>:</label>
-            <input type="text" name="nombre" value="" placeholder="Carlos" required>
-          </li>
-          <li>
-            <label for="">Apellido <span id="ast">*</span>:</label>
-            <input type="text" name="apellido" value="" placeholder="Barrera" required>
-          </li>
-          <li>
-            <label for="">Email <span id="ast">*</span>:</label>
-            <input type="email" name="email" value="" placeholder="cbarrera@mailejemplo.com" required>
-          </li>
-          <li>
-            <label for="">Direccion:</label>
-            <input type="text" name="direccion" value="" placeholder="Av. Voloshinov 5896">
-          </li>
-          <li>
-            <label for="">Ciudad:</label>
-            <input type="text" name="ciudad" value="" placeholder="Puerto Bondad">
-          </li>
-          <li>
-            <label for="">Provincia/Estado:</label>
-            <input type="text" name="provincia" value="" placeholder="Aguirre">
-          </li>
-          <li>
-            <label for="">Pais <span id="ast">*</span>:</label>
+        <div>
+          
+            <label>Nombre <span id="ast">*</span>:</label>
+            <input type="text" name="nombre" value="" placeholder="Carlos" required><br>
+       
+            <label>Apellido <span id="ast">*</span>:</label>
+            <input type="text" name="apellido" value="" placeholder="Barrera" required><br>
+         
+            <label>Email <span id="ast">*</span>:</label>
+            <input type="email" name="email" value="" placeholder="cbarrera@mailejemplo.com" required><br>
+          
+            <label>Direccion:</label>
+            <input type="text" name="direccion" value="" placeholder="Av. Voloshinov 5896"><br>
+         
+            <label>Ciudad:</label>
+            <input type="text" name="ciudad" value="" placeholder="Puerto Bondad"><br>
+          
+            <label>Provincia/Estado:</label>
+            <input type="text" name="provincia" value="" placeholder="Aguirre"><br>
+          
+          
+            <label>Pais <span id="ast">*</span>:</label>
             <select class="" name="pais">
               <option value="other">Otro</option>
               <option value="PA">Panama</option>
             </select><br>
-          </li>
-          <li>
+          
             <label for="">Tarjeta de Credito <span id="ast">*</span>:</label>
-            <input type="text" name="creditCard" value="" placeholder="XXXX-XXXX-XXXX-XXXX" required>
-          </li>
-          <li>
+            <input type="text" name="creditCard" value="" placeholder="XXXX-XXXX-XXXX-XXXX" required><br>
+          
             <p id="p2">Los campos marcados con (<span id="ast">*</span>) son obligatorios.</p>
-          </li>
-          <li>
-            <button type="submit" name="button">Enviar</button>
-          </li>
-        </ul>
+          
+          
+            <button class="button" type="submit" name="button">Enviar</button>
+      </div>
       </form>
     </section>
   </body>
