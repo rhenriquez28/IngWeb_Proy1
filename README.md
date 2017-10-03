@@ -1,0 +1,2 @@
+# Proyecto 1 - Ingenieria Web
+Una empresa está interesada en implementar un sitio web que le permita promocionar sus productos y también desea permitirle a los usu arios registrarse solicitando su información personal mediante un formulario (nombre, apellido, fecha de nacimiento, correo electrónico - debe validar que el correo sea del dominio @ingweb.com.pa – y sus intereses – desplegar opciones - , al finalizar el registro debe presentar todas las generales del usuario de forma visualmente atractiva , adjuntando la edad y el signo zodiacal del usuario.
