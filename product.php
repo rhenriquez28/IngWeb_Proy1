@@ -4,6 +4,7 @@ class Product {
           $price;
           $description;
           $image;
+          $category;
   protected $imgsLocation;
 
   public function getName(){
@@ -37,5 +38,13 @@ class Product {
 	public function setImage($image){
 		$this->image = $image;
 	}
+
+  public function getCategory(){
+    return $this->category;
+  }
+
+  public function setCategory($category){
+    $this->category = $category;
+  }
 }
  ?>
