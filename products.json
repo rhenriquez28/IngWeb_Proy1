@@ -1,0 +1,36 @@
+{
+  "products": [
+    {
+      "name":"Vehiculo Veloz Vertiginoso",
+      "price":20000.00,
+      "description":"Este vehiculo es muy veloz.",
+      "image":"vertiginozo.png",
+      "category":"autos"
+    },
+    {
+      "name":"Cortadora de Cesped Annihilatior 4",
+      "price":400.00,
+      "description":"Esta cortadora de cesped no lo corta, lo aniquila.",
+      "image":"Peregrina.png",
+      "category":"hogar"
+    },{
+      "name":"Cortadora de Cesped Annihilatior 4",
+      "price":400.00,
+      "description":"Esta cortadora de cesped no lo corta, lo aniquila.",
+      "image":"Peregrina.png",
+      "category":"hogar"
+    },{
+      "name":"Cortadora de Cesped Annihilatior 4",
+      "price":400.00,
+      "description":"Esta cortadora de cesped no lo corta, lo aniquila.",
+      "image":"Peregrina.png",
+      "category":"hogar"
+    },{
+      "name":"Cortadora de Cesped Annihilatior 4",
+      "price":400.00,
+      "description":"Esta cortadora de cesped no lo corta, lo aniquila.",
+      "image":"Peregrina.png",
+      "category":"hogar"
+    }
+  ]
+}
