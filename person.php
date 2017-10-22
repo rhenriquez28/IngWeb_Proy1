@@ -1,10 +1,10 @@
 <?php
 class Person {
   private $name;
-          $lastName;
-          $birthdate;
-          $email;
-          $interests[];
+  private $lastName;
+  private $birthdate;
+  private $email;
+  private $interests[];
 
   public function getName() {
     return $this->name;

@@ -7,6 +7,14 @@ class Product {
           $category;
   protected $imgsLocation;
 
+  public function withJSON($jsonObj){
+    $this->name = $jsonObj->name;
+    $this->price = $jsonObj->price;
+    $this->description = $jsonObj->description;
+    $this->image = $jsonObj->image;
+    $this->category = $jsonObj->category;
+  }
+
   public function getName(){
 		return $this->name;
 	}
@@ -45,6 +53,10 @@ class Product {
 
   public function setCategory($category){
     $this->category = $category;
+  }
+
+  public function imgURL(){
+    return $imgsLocation.$image;
   }
 }
  ?>
