@@ -8,8 +8,8 @@ class ProductView extends View{
 $tmpContent =	  '
       <h2>'.$product->getName().'</h2>
       <img src="'.$product->imageURL().'">
-      <p>'.$product->getDescription.'</p>
       <p>Price: '.$product->getPrice().'</p>
+<p>Category: '.$product->getCategory().'</p>
   <p>Description: '.$product->getDescription().'</p>
 ';
 $this->setContent($tmpContent);
