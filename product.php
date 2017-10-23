@@ -1,18 +1,18 @@
 <?php
 class Product {
   private $name;
-          $price;
-          $description;
-          $image;
-          $category;
+  private $price;
+  private $description;
+  private $image;
+  private $category;
   protected $imgsLocation;
 
   public function withJSON($jsonObj){
-    $this->name = $jsonObj->name;
-    $this->price = $jsonObj->price;
-    $this->description = $jsonObj->description;
-    $this->image = $jsonObj->image;
-    $this->category = $jsonObj->category;
+    $this->name = $jsonObj["name"];
+    $this->price = $jsonObj["price"];
+    $this->description = $jsonObj["description"];
+    $this->image = $jsonObj["image"];
+    $this->category = $jsonObj["category"];
   }
 
   public function getName(){
@@ -55,7 +55,7 @@ class Product {
     $this->category = $category;
   }
 
-  public function imgURL(){
+  public function imageURL(){
     return $imgsLocation.$image;
   }
 }
