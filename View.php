@@ -41,6 +41,29 @@ public function __construct()
 			"href"=>"register.php"
 		)
 	);
+	$this->sidebar ='
+
+<aside>
+								<div class ="form-box">
+									<form>
+										<div class="form-group">
+											<label>Buscar:</label>
+											<input class="form-control" type="text">
+										</div>
+										<input class ="btn" type ="submit" value="Buscar">
+									</form>
+								</div>
+								<br>
+								<div>
+										<h5>Patrocinadores</h5>
+										<h6>Google</h6>
+										<img class="img-responsive" src="img/google.png">
+										<h6>Wikipedia</h6>
+										<img class ="img-responsive" src="img/wiki.png">
+								</div>
+								<br>
+</aside>
+';
 }
         public function getHeader(){
   	  return $this->header;
@@ -116,9 +139,15 @@ public function __construct()
       echo $this->getHeader();
       echo '<body>
 ';
-        echo $this->generateNavbar();
-        echo $this->getContent();
-        echo $this->getSidebar();
+      echo $this->generateNavbar();
+      echo '<div class = "row">
+<div class ="col-sm-10">';
+echo $this->getContent();
+echo '</div>
+<div class ="col-sm-2">';
+
+echo $this->getSidebar();
+echo '</div></div>';
 	echo $this->getFooter();
 	echo '</body></html>';
     }
