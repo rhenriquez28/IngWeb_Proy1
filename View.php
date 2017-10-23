@@ -6,8 +6,44 @@ private $content;
 private $sidebar;
 private $footer;
 
-  public function getHeader(){
-  		return $this->header;
+public function __construct()
+{
+	$this->header ='
+<head>
+		<meta charset = "utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/custom.css">
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/popper.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+</head>
+';
+	$this->navbarContent = array(
+		1 => array(
+			"name"=>"Inicio",
+			"href"=>"index.php"
+		),
+		2 => array(
+			"name"=>"Bienvenida",
+			"href"=>"welcome.php"
+		),
+		3 => array(
+			"name"=>"Sobre Nosotros",
+			"href"=>"about.php"
+		),
+		4 => array(
+			"name"=>"Productos",
+			"href"=>"productsController.php?action=displayProducts"
+		),
+		5 => array(
+			"name"=>"Registro",
+			"href"=>"register.php"
+		)
+	);
+}
+        public function getHeader(){
+  	  return $this->header;
   	}
 
   	public function setHeader($header){
@@ -48,30 +84,43 @@ private $footer;
 
     protected function generateNavbar()
     {
-      $navbar ='
-      <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="index.php">WebSiteName</a>
-        </div>
-        <ul class="nav navbar-nav">
-      '
-      foreach(getNavbarContent() as $link)
+	    $navbar ='
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      ';
+      foreach($this->getNavbarContent() as $link)
       {
-        $navbar .= '<li><a href="'.$link->href.'">'.$link->name.'</a></li>';
+	      $navbar .= '<li class ="nav-item"><a class ="nav-link" href="'.$link["href"].'">'.$link["name"].'</a></li>
+';
       }
       $navbar .= '
-        </ul>
-      </div>
-    </nav>
+	</ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
     ';
+      return $navbar;
     }
-    public function render(){
-        echo getHeader();
-        echo generateNavbar();
-        echo getContent();
-        echo getSidebar();
-        echo getFooter();
+	public function render(){
+		echo '<!doctype html>
+			<html>';
+      echo $this->getHeader();
+      echo '<body>
+';
+        echo $this->generateNavbar();
+        echo $this->getContent();
+        echo $this->getSidebar();
+	echo $this->getFooter();
+	echo '</body></html>';
     }
   }
 
