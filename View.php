@@ -9,7 +9,6 @@ private $footer;
 public function __construct()
 {
 	$this->header ='
-<head>
 		<meta charset = "utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -18,7 +17,6 @@ public function __construct()
 		<script src="js/popper.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/custom.js"></script>
-</head>
 ';
 	$this->navbarContent = array(
 		1 => array(
@@ -126,15 +124,16 @@ public function __construct()
     }
 	public function render(){
 		echo '<!doctype html>
-			<html>';
+			<html>
+<head>';
       echo $this->getHeader();
-      echo '<body>
+      echo '</head><body>
 ';
       echo $this->generateNavbar();
       echo '<div class = "row">
-<div class ="col-sm-10">';
+<div class ="col-sm-10"><div class="content">';
 echo $this->getContent();
-echo '</div>
+echo '</div></div>
 <div class ="col-sm-2">';
 
 echo $this->getSidebar();
