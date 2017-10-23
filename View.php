@@ -17,6 +17,7 @@ public function __construct()
 		<script src="js/jquery-3.2.1.min.js"></script>
 		<script src="js/popper.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<script src="js/custom.js"></script>
 </head>
 ';
 	$this->navbarContent = array(
@@ -34,7 +35,7 @@ public function __construct()
 		),
 		4 => array(
 			"name"=>"Productos",
-			"href"=>"productsController.php?action=displayProducts"
+			"href"=>"productsController.php?action=gallery"
 		),
 		5 => array(
 			"name"=>"Registro",
@@ -44,16 +45,6 @@ public function __construct()
 	$this->sidebar ='
 
 <aside>
-								<div class ="form-box">
-									<form>
-										<div class="form-group">
-											<label>Buscar:</label>
-											<input class="form-control" type="text">
-										</div>
-										<input class ="btn" type ="submit" value="Buscar">
-									</form>
-								</div>
-								<br>
 								<div>
 										<h5>Proximamente</h5>
 										<h6>Razer Core</h6>
@@ -125,8 +116,8 @@ public function __construct()
       $navbar .= '
 	</ul>
     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+ <div  id="livesearch"></div>
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" onkeyup="showResult(this.value)">
     </form>
   </div>
 </nav>
