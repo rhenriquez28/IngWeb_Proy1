@@ -49,7 +49,7 @@ $tmp .='
 			$tmp .= ' active';
 		}
 		$tmp .='">
-			<img class="d-block w-100" src="img/test.jpg" alt ="'.$product->getName().'">
+			<a href="productsController.php?action=showProduct&productID='.$i.'"><img class="d-block w-100" src="img/test.jpg" alt ="'.$product->getName().'"></a>
 			<div class = "carousel-caption d-none d-md-block">
 			<h3>'.$product->getName().'</h3>
 			<p>'.$product->getPrice().'</p>';
