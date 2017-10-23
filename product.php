@@ -5,7 +5,7 @@ class Product {
   private $description;
   private $image;
   private $category;
-  protected $imgsLocation;
+  protected $imgsLocation = "/img/";
 
   public function withJSON($jsonObj){
     $this->name = $jsonObj["name"];
