@@ -55,11 +55,11 @@ public function __construct()
 								</div>
 								<br>
 								<div>
-										<h5>Patrocinadores</h5>
-										<h6>Google</h6>
-										<img class="img-responsive" src="img/google.png">
-										<h6>Wikipedia</h6>
-										<img class ="img-responsive" src="img/wiki.png">
+										<h5>Proximamente</h5>
+										<h6>Razer Core</h6>
+										<img class="img-responsive" src="img/proxlap1.png">
+										<h6>Project Valerie</h6>
+										<img class ="img-responsive" src="img/proxlap2.png">
 								</div>
 								<br>
 </aside>
