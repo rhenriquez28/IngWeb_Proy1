@@ -10,6 +10,11 @@ height: 100%;
 position: relative;
   min-height: 100%;
 }
+.content
+{
+	margin-left:50px;
+
+}
 footer
 {
 	color:white;
@@ -30,6 +35,7 @@ footer
 	border-width:1px;
 	border-style:solid;
 	border-color:#00ACC1;
+	margin-bottom:20px;
 }
 .navbar img
 {
