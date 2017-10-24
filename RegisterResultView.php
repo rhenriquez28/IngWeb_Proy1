@@ -13,19 +13,22 @@ El registro fue un exito!
       <p>Nombre: '.$person->getName().'</p>
       <p>Apellido: '.$person->getLastName().'"</p>
 <p>Pais: '.$person->getCountry().'</p>
-<p>Province: '.$person->getProvince().'</p>
-<p>City: '.$person->getCity().'</p>
-      <p>Address: '.$person->getAddress().'</p>
-  <p>Birthdate: '.$person->getBirthdate()->format("d-m-Y").'</p>
-<p>Sign: '.$person->getZodiacal().'</p>
+<p>Provincia: '.$person->getProvince().'</p>
+<p>Ciudad: '.$person->getCity().'</p>
+      <p>Direccion: '.$person->getAddress().'</p>
+  <p>Fecha de Nacimiento: '.$person->getBirthdate()->format("d-m-Y").'</p>
+<p>Tarjeta de Credito: '.$person->getCreditCard().'
+<p>Signo Zodiacal: '.$person->getZodiacal().'</p>
 <p>Interests</p>
 <ul>
 ';
-foreach($this->interests as $interest)
+foreach($person->getInterests() as $interest)
 {
 	$tmpContent .= '<li>'.$interest.'</li>';
 }
-$tmpContent .= '</ul>';
+$tmpContent .= '</ul>
+<a class="btn btn-success" href="productsController.php">Productos</a>';
+
 $this->setContent($tmpContent);
   }
 }
