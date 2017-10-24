@@ -8,17 +8,18 @@ class ProductView extends View{
 $tmpContent =	  '
       <h2>'.$product->getName().'</h2>
       <img src="'.$product->imageURL().'">
-      <p>Price: '.$product->getPrice().'</p>
-<p><span class="bold">Category</span>: '.$product->getCategory().'</p>
+      <p>Precio: '.$product->getPrice().'</p>
+<p><span class="bold">Categoria</span>: '.$product->getCategory().'</p>
 <div class="card">
   <div class="card-header">
     Descripccion
   </div>
   <div class="card-block">
     <p class="card-text">'.$product->getDescription().'</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
+<br>
+    <a href="#" class="btn btn-success">Comprar!</a>
 ';
 $this->setContent($tmpContent);
   }

@@ -12,7 +12,11 @@ position: relative;
 }
 
 
+.card-product{
+height:99%;
+margin-top:20px;
 
+}
 
 .carousel-item  img {
   height:640px;

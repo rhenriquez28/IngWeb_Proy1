@@ -84,7 +84,7 @@ $i = $i+1;
 	  	for($x=0;$x<4 && $iProduct < count($products);$x++)
 		{
 			$tmp .='<div class ="col">
-			<div class="card">
+			<div class="card card-product">
 			<img class="card-img-top" src="'.$products[$iProduct]->imageURL().'" alt="img">
 			<div class ="card-block">
 			<h4 class ="card-title">'.$products[$iProduct]->getName().'</h4>
