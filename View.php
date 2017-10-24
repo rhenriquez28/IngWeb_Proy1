@@ -37,7 +37,7 @@ public function __construct()
 		),
 		5 => array(
 			"name"=>"Registro",
-			"href"=>"register.php"
+			"href"=>"RegisterController.php"
 		)
 	);
 	$this->sidebar ='
@@ -45,14 +45,26 @@ public function __construct()
 <aside>
 								<div>
 										<h5>Proximamente</h5>
-										<h6>Razer Core</h6>
+											<hr>
+<div class="aside-content">										
+<h6>Razer Core</h6>
 										<img class="img-responsive" src="img/proxlap1.png">
+</div>
+<div class="aside-content">										
 										<h6>Project Valerie</h6>
 										<img class ="img-responsive" src="img/proxlap2.png">
+</div>
 								</div>
 								<br>
 </aside>
 ';
+	$tmpFooter = '<p><span class="bold"> Hz.tek</span> es un compañia imaginaria desarrollada para el proyecto 1 del curso de Ingenieria Web por los estudiantes:</p>
+		<ul>
+<li>Acevedo, Roderik</li>
+<li>Henriquez, Roy</li>
+<li>Tuñón, Carlos</li>
+</ul>';
+	$this->setFooter($tmpFooter);
 }
         public function getHeader(){
   	  return $this->header;
@@ -137,9 +149,9 @@ echo '</div></div>
 <div class ="col-sm-2">';
 
 echo $this->getSidebar();
-echo '</div></div>';
+echo '</div></div><footer>';
 	echo $this->getFooter();
-	echo '</body></html>';
+	echo '</footer></body></html>';
     }
   }
 

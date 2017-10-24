@@ -56,7 +56,7 @@ class Product {
   }
 
   public function imageURL(){
-    return $imgsLocation.$image;
+    return $this->imgsLocation.$this->getImage();
   }
 }
  ?>
