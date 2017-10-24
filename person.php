@@ -98,7 +98,7 @@ public function getAddress(){
   }
 
   public function getInterests(){
-    return $this->intersts;
+    return $this->interests;
   }
 
   public function setInterests($interests){
