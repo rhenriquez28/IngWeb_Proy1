@@ -1,35 +1,35 @@
 {
   "products": [
     {
-      "name":"Vehiculo Veloz Vertiginoso",
+      "name":"Hp Spectre",
       "price":20000.00,
-      "description":"Este vehiculo es muy veloz.",
-      "image":"vertiginozo.png",
-      "category":"autos"
+      "description":"Procesador Intel Core i7-7500U (2.7 GHz, hasta 3.5 GHz, con tecnología Intel Turbo Boost, 4 MB de caché, 2 núcleos) Memoria interna de 8 GB LPDDR3-1866 SDRAM (integrados) SSD de 256 GB PCIe NVMe M.2 Tarjeta grafica integrada Intel HD 620 Sistema operativo Windows 10 Home 64 El producto viene con una funda",
+      "image":"spectre.jpg",
+      "category":"Trabajo"
     },
     {
-      "name":"Cortadora de Cesped Annihilatior 4",
+      "name":"Dell Inspiron 15 7000",
       "price":400.00,
-      "description":"Esta cortadora de cesped no lo corta, lo aniquila.",
-      "image":"Peregrina.png",
+      "description":"Los cuadernos para juegos son notoriamente caros, hasta el punto de que gastar menos de $ 1,200 en una máquina de bajo costo es una rareza. Es por eso que nos quedamos tan impresionados con la Inspiron 7500 de Dell a finales de 2015. Era una portátil para juegos capaz en un paquete compacto, todo por alrededor de $ 800. Fue una sorpresa agradable, y socavó la competencia por un margen significativo. Dell buscó construir sobre ese legado con el modelo de este año, el Inspiron 15 Gaming. Cuenta con un procesador Intel Core i5 de séptima generación, una GPU Nvidia GeForce GTX 1050 Ti, y viene en un nuevo y atractivo chasis. A primera vista, parece que se ejecutarán círculos alrededor del modelo 2015, pero es posible que se sorprenda por algunos de los resultados de nuestras pruebas.",
+      "image":"inspironGaming.jpg",
+      "category":"Gaming"
+    },{
+      "name":"XPS 15 9560",
+      "price":400.00,
+      "description":"El nuevo XPS 15 9560 es bastante idéntico al del año pasado en términos de diseño. Pero eso no es malo y sigue siendo una máquina de gran apariencia, con un chasis de aluminio, reposamanos de fibra de carbono suave al tacto y un bisel de pantalla delgada como una oblea. El bisel significa que obtienes una pantalla de 15,6 pulgadas en un cuerpo de 14 pulgadas, incluso cabe en una funda portátil de 13 pulgadas, por lo que es mucho más portátil y fácil de usar en trenes y aviones. Todavía es bastante pesado en términos de peso, inclinando la balanza a alrededor de 2 kg si opta por la batería más grande de 97Wh (lo que debería hacer). A pesar de su factor de forma esbelto, todavía hay espacio para una impresionante gama de puertos, incluidos dos puertos USB 3.0 de tamaño completo, un tercer conector USB 3.1 Type-C con ThunderBolt 3, un puerto HDMI 2.0 de tamaño completo, un lector de tarjetas SD y un Toma de auriculares de 3.5 mm. También obtiene un puerto de bloqueo y un puerto de alimentación patentado. El XPS 15 9560 está disponible con un lector de huellas dactilares opcional. Es compatible con Windows Hello, por lo que, en lugar de escribir una contraseña, puede usar el dedo para iniciar sesión. Es una función ordenada y funciona de manera constante y rápida. Hay dos desventajas menores en el diseño del XPS 15. Primero es el acabado de fibra de carbono. Si bien es innegable que se ve genial, resalta los parches de sudor cuando tienes las muñecas apoyadas sobre él. El otro es que, si bien el XPS 15 es un kit de calidad, carece del diseño monocasco del MacBook Pro y, por lo tanto, se siente sustancialmente menos sólido.",
+      "image":"xps.jpg",
       "category":"hogar"
     },{
       "name":"Cortadora de Cesped Annihilatior 4",
       "price":400.00,
       "description":"Esta cortadora de cesped no lo corta, lo aniquila.",
-      "image":"Peregrina.png",
+      "image":"test.png",
       "category":"hogar"
     },{
       "name":"Cortadora de Cesped Annihilatior 4",
       "price":400.00,
       "description":"Esta cortadora de cesped no lo corta, lo aniquila.",
-      "image":"Peregrina.png",
-      "category":"hogar"
-    },{
-      "name":"Cortadora de Cesped Annihilatior 4",
-      "price":400.00,
-      "description":"Esta cortadora de cesped no lo corta, lo aniquila.",
-      "image":"Peregrina.png",
+      "image":"test.png",
       "category":"hogar"
     }
   ]
