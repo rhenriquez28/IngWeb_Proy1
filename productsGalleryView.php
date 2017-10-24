@@ -89,6 +89,7 @@ $i = $i+1;
 			<div class ="card-block">
 			<h4 class ="card-title">'.$products[$iProduct]->getName().'</h4>
 			<p class ="card-text">'.substr($products[$iProduct]->getDescription(),0,200).'...</p>
+			<a style ="margin-left:20px;" class = "btn btn-primary" href="productsController.php?action=showProduct&productID='.$iProduct.'">Ver</a>
 			</div>
 			</div>
 			</div>
