@@ -21,7 +21,7 @@ class Person {
 	$this->setProvince($peronsa["province"]);
 	$this->setCountry($persona["country"]);
 	$this->setCreditCard($persona["creditCard"]);
-	$this->setBirthdate($persona["birthdate"]);
+	$this->setBirthdate(DateTime::createFromFormat("Y-m-d",$persona["birthdate"]));
 	$this->setEmail($persona["email"]);
 	$this->setInterests($persona["interests"]);
   }
@@ -105,7 +105,7 @@ public function getAddress(){
     $this->interests = $interests;
   }
 
-  public function getZodical()
+  public function getZodiacal()
   {
 	  $signs = array(
 		  [
@@ -170,23 +170,24 @@ public function getAddress(){
 		  ]
 	  
 	  );
-		$i=0;
+	  $i=0;
 	  foreach($signs as $sign)
 	  {
-		  if((strtotime($this->getBirthdate())>strtotime($sign["minorBound"]."-".$this->getBirthYear())) && (strtotime($this->getBirthdate())>=strtotime($sign["upperBound"]."-".$this->getBirthYear())) )
+		  $lowerBound = DateTime::createFromFormat("d-m-Y",$sign["minorBound"]."-".$this->getBirthYear());
+		  $upperBound = DateTime::createFromFormat("d-m-Y",$sign["upperBound"]."-".$this->getBirthYear());
+		  if($this->getBirthdate()>$lowerBound && $this->getBirthdate()<=$upperBound   )
 		  {
 		 	break; 
 		  }
 	  $i = $i+1;
 
-		  return $signs[$i]["name"];
 	  }	  
-  
+		  return $signs[$i]["name"];
   
   }
   protected function getBirthYear()
   {
-  	return date('Y',$this->getBirthdate());
+  	return $this->getBirthdate()->format("Y");
   
   } 
 }
