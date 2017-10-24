@@ -1,29 +1,29 @@
 {
   "products": [
     {
-      "name":"Vehiculo Veloz Vertiginoso",
-      "price":20000.00,
-      "description":"Este vehiculo es muy veloz.",
-      "image":"vertiginozo.png",
+      "name":"Dell XPS 13",
+      "price":869.00,
+      "description":"Delgado, ligero, potente y majestuoso, el buque insignia de Dell XPS 13 es la mejor computadora portátil del mundo en el momento de escribir estas líneas. Quizás reprimida por el hecho de que el estético modelo Alpine White está en camino, la versión que hemos revisado debería satisfacer su anhelo por el ultrabook de Windows de primera categoría. Ya sea por sus potentes procesadores Intel Kaby Lake que van de i3 a i7 o por su pantalla "Infinity Edge" sin bisel, que hace que la pantalla de 13.3 pulgadas se convierta en un marco de 11 pulgadas, la Dell XPS 13 da un toque significativo en la competición.",
+      "image":"dell_xps.jpg",
       "category":"autos"
     },
     {
-      "name":"Cortadora de Cesped Annihilatior 4",
-      "price":400.00,
-      "description":"Esta cortadora de cesped no lo corta, lo aniquila.",
-      "image":"Peregrina.png",
+      "name":"Asus Zenbook UX310UA",
+      "price":884.89,
+      "description":"He aquí la Asus ZenBook UX310UA, una computadora portátil que evita el elevado precio de la Dell XPS 13 sin comprometer el rendimiento. No se ve ni se siente tan bien como el anterior de Dell, y la duración de la batería no es tan buena, pero aún se puede esperar un marco totalmente de aluminio y un rendimiento fantástico de un procesador Kaby Lake de séptima generación, ya sea de la variedad i3 o i5 depende completamente de usted.",
+      "image":"asus_zen.jpg",
       "category":"hogar"
     },{
-      "name":"Cortadora de Cesped Annihilatior 4",
-      "price":400.00,
-      "description":"Esta cortadora de cesped no lo corta, lo aniquila.",
-      "image":"Peregrina.png",
+      "name":"Lenovo Yoga Book",
+      "price":288.99,
+      "description":"Si buscas una laptop barata que ofrezca algo un poco especial, no busques más, el Lenovo Yoga Book 2017. Como con todos los dispositivos de Yoga, la pantalla se pliega para que puedas usarla como tableta o laptop. Para agregar más versatilidad, Lenovo ahora ha agregado la opción de comprarlo con Windows 10 o con Android 6.0 a bordo: el que elija dependerá de la mayor probabilidad de que use el dispositivo.",
+      "image":"lenovo_yoga.jpg",
       "category":"hogar"
     },{
-      "name":"Cortadora de Cesped Annihilatior 4",
-      "price":400.00,
-      "description":"Esta cortadora de cesped no lo corta, lo aniquila.",
-      "image":"Peregrina.png",
+      "name":"Apple Macbook Pro with Touch Bar",
+      "price":2199.00,
+      "description":"Si buscas la mejor y más nueva laptop de Apple, te sugerimos que abras la Macbook Pro de 13 pulgadas con Touch Bar. A pesar de las afirmaciones de Microsoft de que su Surface Book 2 es dos veces más potente que la nave insignia MacBook Pro de Apple, también es más caro en el nivel inicial. Por supuesto, la característica del título es la barra táctil: es una delgada pantalla OLED en la parte superior del teclado que se puede utilizar para cualquier cantidad de cosas, ya sea que esté sugiriendo automáticamente palabras mientras escribe o que ofrece Touch ID para que pueda iniciar sesión con solo tu huella dactilar",
+      "image":"apple_mac.jpg",
       "category":"hogar"
     },{
       "name":"Cortadora de Cesped Annihilatior 4",
