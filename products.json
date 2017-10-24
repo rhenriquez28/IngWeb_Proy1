@@ -19,16 +19,6 @@
       "description":"El nuevo XPS 15 9560 es bastante idéntico al del año pasado en términos de diseño. Pero eso no es malo y sigue siendo una máquina de gran apariencia, con un chasis de aluminio, reposamanos de fibra de carbono suave al tacto y un bisel de pantalla delgada como una oblea. El bisel significa que obtienes una pantalla de 15,6 pulgadas en un cuerpo de 14 pulgadas, incluso cabe en una funda portátil de 13 pulgadas, por lo que es mucho más portátil y fácil de usar en trenes y aviones. Todavía es bastante pesado en términos de peso, inclinando la balanza a alrededor de 2 kg si opta por la batería más grande de 97Wh (lo que debería hacer). A pesar de su factor de forma esbelto, todavía hay espacio para una impresionante gama de puertos, incluidos dos puertos USB 3.0 de tamaño completo, un tercer conector USB 3.1 Type-C con ThunderBolt 3, un puerto HDMI 2.0 de tamaño completo, un lector de tarjetas SD y un Toma de auriculares de 3.5 mm. También obtiene un puerto de bloqueo y un puerto de alimentación patentado. El XPS 15 9560 está disponible con un lector de huellas dactilares opcional. Es compatible con Windows Hello, por lo que, en lugar de escribir una contraseña, puede usar el dedo para iniciar sesión. Es una función ordenada y funciona de manera constante y rápida. Hay dos desventajas menores en el diseño del XPS 15. Primero es el acabado de fibra de carbono. Si bien es innegable que se ve genial, resalta los parches de sudor cuando tienes las muñecas apoyadas sobre él. El otro es que, si bien el XPS 15 es un kit de calidad, carece del diseño monocasco del MacBook Pro y, por lo tanto, se siente sustancialmente menos sólido.",
       "image":"xps.jpg",
       "category":"hogar"
-    },{
-      "name":"Cortadora de Cesped Annihilatior 4",
-      "price":400.00,
-      "description":"Esta cortadora de cesped no lo corta, lo aniquila.",
-      "image":"test.png",
-      "name":"Dell XPS 13",
-      "price":869.00,
-      "description":"Delgado, ligero, potente y majestuoso, el buque insignia de Dell XPS 13 es la mejor computadora portátil del mundo en el momento de escribir estas líneas. Quizás reprimida por el hecho de que el estético modelo Alpine White está en camino, la versión que hemos revisado debería satisfacer su anhelo por el ultrabook de Windows de primera categoría. Ya sea por sus potentes procesadores Intel Kaby Lake que van de i3 a i7 o por su pantalla \"Infinity Edge\"sin bisel, que hace que la pantalla de 13.3 pulgadas se convierta en un marco de 11 pulgadas, la Dell XPS 13 da un toque significativo en la competición.",
-      "image":"dell_xps.jpg",
-      "category":"autos"
     },
     {
       "name":"Asus Zenbook UX310UA",
