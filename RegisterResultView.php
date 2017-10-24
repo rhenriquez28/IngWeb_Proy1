@@ -16,7 +16,8 @@ El registro fue un exito!
 <p>Province: '.$person->getProvince().'</p>
 <p>City: '.$person->getCity().'</p>
       <p>Address: '.$person->getAddress().'</p>
-  <p>Birthdate: '.$person->getBirthdate()->format("d-m-Y").'</p>
+  <p>Dia de nacimiento: '.$person->getBirthdate()->format("d-m-Y").'</p>
+<p>Edad: '.$person->getAge().'</p>
 <p>Sign: '.$person->getZodiacal().'</p>
 <p>Interests</p>
 <ul>

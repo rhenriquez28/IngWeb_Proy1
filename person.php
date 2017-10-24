@@ -25,6 +25,10 @@ class Person {
 	$this->setEmail($persona["email"]);
 	$this->setInterests($persona["interests"]);
   }
+  public function getAge()
+  {
+ 	return $this->getBirthdate()->diff(new DateTime('now'))->y; 
+}
   public function getName() {
     return $this->name;
   }
