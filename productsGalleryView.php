@@ -7,6 +7,7 @@ class ProductsGalleryView extends View{
 	  parent::__construct();
 	  $this->setProducts($products);
 	  $this->setContent($this->generateProductCarousel());
+	  $this->setContent($this->getContent().$this->generateCards());
 
   }
   public function setProducts($products)
@@ -49,7 +50,7 @@ $tmp .='
 			$tmp .= ' active';
 		}
 		$tmp .='">
-			<a href="productsController.php?action=showProduct&productID='.$i.'"><img class="d-block w-100" src="img/test.jpg" alt ="'.$product->getName().'"></a>
+			<a href="productsController.php?action=showProduct&productID='.$i.'"><img class="d-block img-fluid" src="'.$product->imageURL().'" alt ="'.$product->getName().'"></a>
 			<div class = "carousel-caption d-none d-md-block">
 			<h3>'.$product->getName().'</h3>
 			<p>'.$product->getPrice().'</p>';
@@ -70,5 +71,33 @@ $i = $i+1;
 		  
 		  </div></div>'; 
   	return($tmp);
+  }
+
+  public function generateCards()
+  {
+	  $tmp="";
+	  $products = $this->getProducts();
+	  $iProduct = 0;
+	  for($i=0;$i<round(count($products)/3,PHP_ROUND_HALF_ODD);$i++)
+	  {
+	  	$tmp .='<div class="row">';
+	  	for($x=0;$x<4 && $iProduct < count($products);$x++)
+		{
+			$tmp .='<div class ="col">
+			<div class="card">
+			<img class="card-img-top" src="'.$products[$iProduct]->imageURL().'" alt="img">
+			<div class ="card-block">
+			<h4 class ="card-title">'.$products[$iProduct]->getName().'</h4>
+			<p class ="card-text">'.substr($products[$iProduct]->getDescription(),0,200).'...</p>
+			</div>
+			</div>
+			</div>
+			';
+		$iProduct++;
+		}
+		$tmp .='</div>';
+	  }
+	return($tmp);
+  
   }
 }
