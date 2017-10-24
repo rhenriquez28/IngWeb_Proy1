@@ -4,12 +4,13 @@ class RegisterView extends View{
 
 public function __construct()
 {
-	$tmp ='
-	
+ parent::__construct();
+ $this->setHeader($this->getHeader().'<link rel="stylesheet" href="/css/master.css">');
+ $tmp ='
       <h3>Registrate para poder comprar lo último de nuestro catalogo!</h3>
       <hr>
       <br>
-      <form class="register_form" method="get">
+      <form class="form register_form" method="get">
         <div>
          <input type="hidden" name="action" value="showRegisterResult"> 
             <label>Nombre <span id="ast">*</span>:</label>
@@ -19,7 +20,7 @@ public function __construct()
             <input type="text" name="lastName" value="" placeholder="Barrera" required><br>
          
             <label>Email <span id="ast">*</span>:</label>
-            <input type="email" name="email" value="" placeholder="cbarrera@mailejemplo.com" required><br>
+            <input type="email" name="email" value="" pattern="~@ingweb\.com\.pa$~" placeholder="cbarrera@ingweb.com.pa" required ><br>
           
             <label>Birthdate:</label>
             <input type="date" name="birthdate" value="" placeholder ="d-m-y"><br>
@@ -50,7 +51,7 @@ public function __construct()
             <p id="p2">Los campos marcados con (<span id="ast">*</span>) son obligatorios.</p>
           
           
-            <button class="button" type="submit" name="button">Enviar</button>
+            <button class="btn btn-primary" type="submit" name="button">Enviar</button>
       </div>
       </form>
 
